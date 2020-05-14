@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.jetpack.R;
+import com.example.jetpack.navigation.NavigationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,DataBindingActivity.class));
+            }
+        });
+        findViewById(R.id.btn_data_binding).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, NavigationActivity.class));
+            }
+        });
+        findViewById(R.id.btn_navigation).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,NavigationActivity.class));
             }
         });
     }

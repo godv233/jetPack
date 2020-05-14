@@ -1,19 +1,15 @@
 package com.example.jetpack.activity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.jetpack.R;
 import com.example.jetpack.databinding.DataBindingBinding;
 import com.example.jetpack.viewModel.DataBindingViewModel;
-import com.example.jetpack.viewModel.LiveDataViewModel;
 
 
 /**
