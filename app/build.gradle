@@ -35,7 +35,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    //viewModel  and liveData
+    //viewModel  liveData dataBinding
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     //lombok
     annotationProcessor 'org.projectlombok:lombok:1.18.2'
@@ -48,4 +48,6 @@ dependencies {
     //room
     implementation "androidx.room:room-runtime:2.2.3"
     annotationProcessor "androidx.room:room-compiler:2.2.3"
+    //paging
+    implementation "androidx.paging:paging-runtime:2.1.1"
 }

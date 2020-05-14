@@ -1,5 +1,6 @@
 package com.example.jetpack.room.dao;
 
+import androidx.paging.DataSource;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -23,4 +24,8 @@ public interface StudentDao {
 
     @Query("select * from student_db")
     List<StudentEntity> queryList();
+    //当我们使用room集成不同的组件的时候。我们可以自定义我们的返回类型
+    @Query("select * from student_db")
+    DataSource.Factory<Integer,StudentEntity> queryListPaging();
+
 }

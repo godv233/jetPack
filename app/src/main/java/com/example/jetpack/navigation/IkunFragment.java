@@ -46,7 +46,9 @@ public class IkunFragment extends Fragment {
     private void insert() {
         StudentEntity studentEntity = new StudentEntity("曾伟", "godv");
         Log.d("IkunFragment",studentEntity.toString());
-        StudentRepository.getInstance(getContext()).getStudentDao().insert(studentEntity);
+        for (int i = 0; i < 20; i++) {
+            StudentRepository.getInstance(getContext()).getStudentDao().insert(studentEntity);
+        }
     }
 
     @Override
