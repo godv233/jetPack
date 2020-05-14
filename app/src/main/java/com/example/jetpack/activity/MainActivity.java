@@ -32,5 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,LiveDataActivity.class));
             }
         });
+        findViewById(R.id.btn_data_binding).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,DataBindingActivity.class));
+            }
+        });
     }
 }
